@@ -15,6 +15,11 @@
                     <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
                         {{ __('Admin Dashboard') }}
                     </x-nav-link>
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.index')">
+                            {{ __('User Management') }}
+                        </x-nav-link>
+                    </div>
                 </div>
             </div>
 
